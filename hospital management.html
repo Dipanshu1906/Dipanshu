@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LifeCare Hospital</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(0, 91, 150, 0.7),
+                rgba(0, 91, 150, 0.7)),
+            url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    .section-title {
+        font-weight: bold;
+        color: #0d6efd;
+        margin-bottom: 40px;
+    }
+
+    .doctor-card {
+        transition: 0.3s;
+    }
+
+    .doctor-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .emergency-section {
+        background: #dc3545;
+        color: white;
+    }
+
+    footer {
+        background: #0d6efd;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            <i class="bi bi-hospital"></i> LifeCare Hospital
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#doctors">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#appointment">Appointment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold">A Better Life Ahead</h1>
+        <p class="lead mt-3">
+            Trusted healthcare services with expert doctors and advanced facilities.
+        </p>
+        <a href="#appointment" class="btn btn-warning btn-lg mt-3">
+            Book Appointment
+        </a>
+    </div>
+</section>
+
+<!-- About -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="section-title">Welcome to LifeCare Hospital</h2>
+        <p class="text-muted">
+            We provide highly qualified doctors with 24/7 availability.
+        </p>
+    </div>
+</section>
+
+<!-- Doctors Section -->
+<section id="doctors" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Our Specialists</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card doctor-card shadow">
+                    <div class="card-body text-center">
+                        <i class="bi bi-heart-pulse-fill text-danger fs-1"></i>
+                        <h5 class="mt-3">Dr. Sushmita Sen</h5>
+                        <p class="text-primary fw-bold">Cardiologist</p>
+                        <p>Expert in heart disease.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card doctor-card shadow">
+                    <div class="card-body text-center">
+                        <i class="bi bi-activity text-success fs-1"></i>
+                        <h5 class="mt-3">Dr. Salimuddin Quazi</h5>
+                        <p class="text-primary fw-bold">Neurologist</p>
+                        <p>Specialized in nervous system and brain.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card doctor-card shadow">
+                    <div class="card-body text-center">
+                        <i class="bi bi-person-hearts text-warning fs-1"></i>
+                        <h5 class="mt-3">Dr. Advait Gupta</h5>
+                        <p class="text-primary fw-bold">Pediatrician</p>
+                        <p>Healthcare services for children.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card doctor-card shadow">
+                    <div class="card-body text-center">
+                        <i class="bi bi-bandaid-fill text-info fs-1"></i>
+                        <h5 class="mt-3">Dr. Mohan Chatterjee</h5>
+                        <p class="text-primary fw-bold">Orthopedic Surgeon</p>
+                        <p>Specialist in bones & joints.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Form -->
+<section id="appointment" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Book an Appointment</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="card shadow-lg">
+                    <div class="card-body p-4">
+
+                        <form>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Department</label>
+                                    <select class="form-select">
+                                        <option>Select Department</option>
+                                        <option>Cardiology</option>
+                                        <option>Neurology</option>
+                                        <option>Pediatrics</option>
+                                        <option>Orthopedics</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Appointment Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button class="btn btn-primary px-5">
+                                    Submit Appointment
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Emergency Section -->
+<section class="emergency-section py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold">24/7 Emergency Services</h2>
+        <p class="lead">
+            Immediate medical services everytime you need it.
+        </p>
+        <h1>
+            <i class="bi bi-telephone-fill"></i>
+            Emergency: +91 108
+        </h1>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Contact Us</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-geo-alt-fill fs-1 text-primary"></i>
+                        <h5 class="mt-3">Address</h5>
+                        <p>Dhantoli, Nagpur, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-telephone-fill fs-1 text-success"></i>
+                        <h5 class="mt-3">Phone</h5>
+                        <p>+91 9994 7528</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+                    <div class="card-body">
+                        <i class="bi bi-envelope-fill fs-1 text-danger"></i>
+                        <h5 class="mt-3">Email</h5>
+                        <p>info@lifecarehospital.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 text-center">
+    <p class="mb-0">
+        © 2026 LifeCare Hospital. All Rights Reserved.
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>   
